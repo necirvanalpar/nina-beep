@@ -1,25 +1,24 @@
-We haven't made the English version as it's currently in the testing phase.
+[TR](https://github.com/necirvanalpar/nina-beep/blob/main/LANGS/README_TR.md)
+# Nina Warnungen Alarm
 
-# Nina Uyarıları Alarmı
+Dieses Python-Skript wurde erstellt, um sofort über Nina-Warnungen in Deutschland informiert zu werden. Wenn Warnungen erkannt werden, die für eine bestimmte ARS-Nummer und ein Risikolevel von "Immediate" für eine Region gelten, wird ein Alarmton auf Ihrem Computer ausgegeben.
 
-Bu Python betiği, Almanya'daki Nina uyarılarından anında haberdar olmak için oluşturulmuştur. Belirli bir ARS numarasına sahip bir bölge için tehlike seviyesi "Immediate" olan uyarılar algılanırsa, bilgisayarınızda bir alarm bip sesi çalar.
+## Erste Schritte
 
-## Başlarken
-
-Bu betiği kullanmak için, [Python](https://www.python.org/) ve [requests](https://pypi.org/project/requests/) ve [json](https://docs.python.org/3/library/json.html) kütüphanelerinin yüklü olması gerekiyor. Ayrıca, `winsound` modülü yalnızca Windows işletim sistemlerinde çalışır.
+Um dieses Skript zu verwenden, müssen die [Python](https://www.python.org/) und [requests](https://pypi.org/project/requests/) und [json-Bibliotheken](https://docs.python.org/3/library/json.html) installiert sein. Der `winsound`-Modul funktioniert nur unter Windows-Betriebssystemen.
 
 ```bash
-pip install requests
+pip install -r requirements.txt
 ```
 
-## Kullanım
+## Verwendung
 
-1. `ninaBaseUrl` değişkeninde Nina sunucusunun URL'sini belirtin.
-2. `arsNo` değişkenindeki ARS numarasını kendi bölgenize göre güncelleyin.
-3. `tehlike_seviyesi` değişkenindeki tehlike seviyesini ayarlayın.
-4. `filename` değişkeninde JSON dosyasının adını belirleyin.
-5. Betiği çalıştırın: `python nina_uyarilari.py`
+1. Geben Sie in der Variable `ninaBaseUrl` die URL des Nina-Servers an.
+2. Aktualisieren Sie die [ARS-Nummer](https://www.xrepository.de/api/xrepository/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:rs_2021-07-31/download/Regionalschl_ssel_2021-07-31.json) in der Variable `arsNo` entsprechend Ihrer Region.
+3. Stellen Sie die Gefahrenstufe in der Variable `tehlike_seviyesi` ein.
+4. Geben Sie den Namen der JSON-Datei in der Variable `filename` an.
+5. Führen Sie das Skript aus: `python nina_uyarilari.py`
 
-## Katkıda Bulunma
+## Mitwirken
 
-Herhangi bir sorun veya öneri için lütfen bir GitHub Issue açın veya bir Pull Request gönderin.
+Bitte erstellen Sie bei Problemen oder Vorschlägen ein GitHub-Problem oder senden Sie eine Pull-Anforderung.
