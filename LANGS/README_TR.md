@@ -20,7 +20,7 @@ pip install requests
 2. `arsNo` değişkenindeki [ARS](https://www.xrepository.de/api/xrepository/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:rs_2021-07-31/download/Regionalschl_ssel_2021-07-31.json) numarasını kendi bölgenize göre güncelleyin.
 3. `tehlike_seviyesi` değişkenindeki tehlike seviyesini ayarlayın.
 4. `filename` değişkeninde JSON dosyasının adını belirleyin.
-5. Betiği çalıştırın: `python nina_uyarilari.py`
+5. Betiği çalıştırın: `python main.py`
 
 ## Katkıda Bulunma
 
