@@ -17,7 +17,7 @@ pip install -r requirements.txt
 2. Aktualisieren Sie die [ARS-Nummer](https://www.xrepository.de/api/xrepository/urn:de:bund:destatis:bevoelkerungsstatistik:schluessel:rs_2021-07-31/download/Regionalschl_ssel_2021-07-31.json) in der Variable `arsNo` entsprechend Ihrer Region.
 3. Stellen Sie die Gefahrenstufe in der Variable `tehlike_seviyesi` ein.
 4. Geben Sie den Namen der JSON-Datei in der Variable `filename` an.
-5. Führen Sie das Skript aus: `python nina_uyarilari.py`
+5. Führen Sie das Skript aus: `python main.py`
 
 ## Mitwirken
 
